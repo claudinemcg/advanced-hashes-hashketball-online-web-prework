@@ -60,7 +60,7 @@ def game_hash
       :team_name => "Charlotte Hornets",
       :colors => ["Turquoise", "Purple"],
       :players => {
-        "Jeff Adrien" => {
+        :name => "Jeff Adrien" => {
           :number => 4,
           :shoe => 18,
           :points => 10,
@@ -70,7 +70,7 @@ def game_hash
           :blocks => 7,
           :slam_dunks => 2
         },
-        "Bismak Biyombo" => {
+        :name => "Bismak Biyombo" => {
           :number => 0,
           :shoe => 16,
           :points => 12,
@@ -80,7 +80,7 @@ def game_hash
           :blocks => 15,
           :slam_dunks => 10
         },
-        "DeSagna Diop" => {
+        :name => "DeSagna Diop" => {
           :number => 2,
           :shoe => 14,
           :points => 24,
@@ -90,7 +90,7 @@ def game_hash
           :blocks => 5,
           :slam_dunks => 5
         },
-        "Ben Gordon" => {
+        :name => "Ben Gordon" => {
           :number => 8,
           :shoe => 15,
           :points => 33,
@@ -100,7 +100,7 @@ def game_hash
           :blocks => 1,
           :slam_dunks => 0
         },
-        "Brendan Haywood" => {
+       :name =>  "Brendan Haywood" => {
           :number => 33,
           :shoe => 15,
           :points => 6,
@@ -119,7 +119,7 @@ def num_points_scored(name)
   game_hash.each do |location, info| 
     info.each do |attribute, details| 
       if details.include?(name) 
-       return game_hash[:location][:attribute][:name][:points]
+       return game_hash[location][attribute][name][points]
       end
     end
   end
