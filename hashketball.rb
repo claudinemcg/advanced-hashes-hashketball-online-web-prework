@@ -111,32 +111,7 @@ def game_hash
           steals: 22,
           blocks: 5,
           slam_dunks: 12
-        }
-    ]
-    }
-  }
       
-      
-      
-      
-      ]
-        ]}
-    }
-    :away =>{
-      :team_name => {}
-      :colors =>{}
-      :players => {[]}
-      
-    }
-    
-    
-    
-    
-  }
-  
-  
-end
-
 
 
 
