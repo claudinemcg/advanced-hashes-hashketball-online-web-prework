@@ -1,23 +1,3 @@
-Skip to content
-Why GitHub? 
-Enterprise
-Explore 
-Marketplace
-Pricing 
-Search
-
-Sign in
-Sign up
-0 0 0 Ari2002/Hasketball
- Code  Issues 0  Pull requests 0  Projects 0  Security  Insights
-Join GitHub today
-GitHub is home to over 36 million developers working together to host and review code, manage projects, and build software together.
-
-Hasketball/hasketball.rb
-@Ari2002 Ari2002 third commit
-fbbfe8f on 31 Jul 2017
-162 lines (144 sloc)  4.54 KB
-    
 def game_hash
     @game_hash = {
         :home => {
