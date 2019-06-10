@@ -1,5 +1,5 @@
 def game_hash
-    @game_hash = {
+    game_hash = {
         :home => {
             :team_name => "Brooklyn Nets",
             :colors => ["Black", "White"],
@@ -117,19 +117,19 @@ def game_hash
 #puts game_hash 
 
 def home_team_name
-    puts @game_hash[:home][:colors]
+    puts game_hash[:home][:colors]
 end 
 
 home_team_name
 
 def num_points_scored(player_name)
-    puts @game_hash[:away][:players][:jeff_adrien][:points]
+    puts game_hash[:away][:players][:jeff_adrien][:points]
     
-    if @game_hash.each [:home][:player][player_name][:points]
+    if game_hash.each [:home][:player][player_name][:points]
         puts 
-    puts @game_hash.each [:home][:player][player_name][:points]
-     puts @game_hash.each [:home][:player][player_name][:points]
-        @game_hash[:home][:players].each do |player|
+    puts game_hash.each [:home][:player][player_name][:points]
+     puts game_hash.each [:home][:player][player_name][:points]
+        game_hash[:home][:players].each do |player|
          
         if player == player_name
             puts @game_hash.each [:home][:player][:player_name][:points]
