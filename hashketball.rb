@@ -117,33 +117,26 @@ def game_hash
   }
 end
 
+def home_team_name
+  game_hash[:home][:team_name]
+end
 
-# def home_team_name
-#   game_hash[:home][:team_name]
-# end
-# puts home_team_name
 
-# def home_team_name
-#   game_hash[:home][:team_name]
-# end
- 
-# puts home_team_name
-
-# def good_practices
-  # game_hash.each do |location, team_data|
+def good_practices
+  game_hash.each do |location, team_data|
     #are you ABSOLUTELY SURE what 'location' and 'team data' are? use binding.pry to find out!
     
-      # team_data.each do |attribute, data|
+      team_data.each do |attribute, data|
         #are you ABSOLUTELY SURE what 'attribute' and 'team data' are? use binding.pry to find out!
         
  
         #what is 'data' at each loop through out .each block? when will the following line of code work and when will it break?
-        # data.each do |data_item|
+        data.each do |data_item|
             
-      # end
-    # end
-  # end
-# end
+      end
+    end
+  end
+end
 
 # good_practices
 
@@ -152,10 +145,10 @@ end
 #   player.fetch(:shoe)
 # end
 
-# def num_points_scored(name)
-#   player = find_the_player(name)
-#   player.fetch(:points)
-# end
+def num_points_scored(name)
+  player = find_the_player(name)
+  player.fetch(:points)
+end
 
 # def team_colors(team_name)
 #   team = find_the_team(team_name)
